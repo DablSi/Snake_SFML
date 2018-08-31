@@ -1,0 +1,93 @@
+[33mcommit 261aba1573c03abdbea109fa2bb1eb5447daeb70[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: fc78d51 7eafa52
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:28:57 2018 +0300
+
+    Merge branch 'master' of https://github.com/DablSi/Snake_SFML
+
+[33mcommit fc78d51347f87231d4b711b08278fdf962888c1e[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:28:46 2018 +0300
+
+    Added main file
+
+[33mcommit 32b689fa7fa70faaa4a8e70d9bc2e1a40dc39b51[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:28:37 2018 +0300
+
+    Added Game
+
+[33mcommit a54b82aa923a359c2a5e3f344c475370ef1924f8[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:28:29 2018 +0300
+
+    Added GameLoop
+
+[33mcommit dbe6c3a842bf84419fba3b225436f0d49a656573[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:28:22 2018 +0300
+
+    Added EventSystem
+
+[33mcommit 8c2f9b1ae230e493759dd6cac871b6252e764778[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:28:04 2018 +0300
+
+    Build with C++11
+
+[33mcommit 2a7d64eab4c86ff8230803d7545e26620c42c72c[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 12:27:40 2018 +0300
+
+    Deleted game.cpp
+
+[33mcommit 7eafa52e233d114bfd0c19056614b92e92796a7b[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Sofia Tkachenko <duck.shelter@gmail.com>
+Date:   Fri Aug 31 13:23:25 2018 +0400
+
+    Create .gitconfig
+    
+    Just to be able to cone this to my freaking PC.
+
+[33mcommit 6eb3756ccf6f0ee55e68419eff3720249c448713[m[33m ([m[1;31morigin/ntngel1[m[33m)[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 09:17:18 2018 +0300
+
+    Added SFML library to project
+
+[33mcommit c949250693a54d1af782e50777627aa0c2bcc294[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 09:16:53 2018 +0300
+
+    Simple window with SFML
+
+[33mcommit 40438002229f6df33b6be3fc9d8d650a55210ff4[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 09:16:44 2018 +0300
+
+    Added CMakeLists.txt
+
+[33mcommit 807edd7467a55c5606162381a32ec347bed747f9[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Fri Aug 31 09:16:35 2018 +0300
+
+    Added gitignore
+
+[33mcommit bf2633f1b5347f77b4fe6260b135f1b35d9f9209[m[33m ([m[1;31morigin/DablSi[m[33m)[m
+Merge: 9c48026 d6f84e9
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Thu Aug 30 23:31:14 2018 +0300
+
+    Merge branch 'ntngel1'
+
+[33mcommit d6f84e911c562e26cff8b116f0611ca8945a6fd5[m[33m ([m[1;32mntngel1[m[33m)[m
+Author: ntngel1 <ntngel1@gmail.com>
+Date:   Thu Aug 30 23:26:46 2018 +0300
+
+    Added basic CMake project
+
+[33mcommit 9c48026239405a7ffc26376eedf8869530343e2f[m
+Author: Sofia Tkachenko <duck.shelter@gmail.com>
+Date:   Thu Aug 30 23:45:50 2018 +0400
+
+    Initial commit
