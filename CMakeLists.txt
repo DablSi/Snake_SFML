@@ -2,15 +2,15 @@ cmake_minimum_required(VERSION 3.10)
 
 project(Snake)
 
-set (CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# SFML Setup
-
 # Includes
 include_directories(${CMAKE_CURRENT_BINARY_DIR}/include)
+
+# SFML Setup
 # Determining OS and selecting appropriate shared libs
 message(STATUS "Determining your OS...")
 if (APPLE)
@@ -36,7 +36,10 @@ endif (APPLE)
 
 
 # Creating executable
-add_executable(Snake game.cpp)
+add_executable(Snake ${CMAKE_BINARY_DIR}/src/EventSystem.cpp
+                     ${CMAKE_BINARY_DIR}/src/Game.cpp
+                     ${CMAKE_BINARY_DIR}/src/GameLoop.cpp
+                     ${CMAKE_BINARY_DIR}/src/main.cpp)
 
 # Linking SFML to executable
 target_link_libraries(Snake sfml-audio sfml-graphics sfml-window sfml-system)
