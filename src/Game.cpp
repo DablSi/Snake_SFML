@@ -1,9 +1,10 @@
 #include "Game.h"
+#include <iostream>
 
-Game::Game(const sf::VideoMode& mode, const std::string& title)
+std::unique_ptr<Game> Game::m_game;
+
+Game::Game()
 {
-    m_window = std::make_unique<sf::RenderWindow>(mode, title);
-    m_eventsystem = std::make_unique<EventSystem>();
 }
 
 Game::~Game()
@@ -11,9 +12,32 @@ Game::~Game()
     
 }
 
+Game* Game::get_instance()
+{
+    if (!m_game)
+    {
+        Game* game = new Game();
+
+        m_game = std::unique_ptr<Game>(game);
+    }
+
+    return m_game.get();
+}
+
+sf::RenderWindow* Game::get_window()
+{
+    return m_window.get();
+}
+
+void Game::init(const sf::VideoMode& mode, const std::string& title)
+{
+    m_window = std::make_unique<sf::RenderWindow>(mode, title);
+    m_eventsystem = EventSystem::get_instance();
+}
+
 void Game::run()
 {
-    m_gameloop = std::make_unique<GameLoop>();
+    m_gameloop = std::make_unique<GameLoop1>();
 
     m_gameloop->load_resources();
     m_gameloop->init();
@@ -28,9 +52,5 @@ void Game::run()
 
         m_window->display();
     }
-}
-
-EventSystem* Game::get_event_system()
-{
-    return m_eventsystem.get();
+    
 }

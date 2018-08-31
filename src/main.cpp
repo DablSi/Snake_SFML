@@ -2,9 +2,11 @@
 
 int main(int argc, char const *argv[])
 {
-    Game game(sf::VideoMode(800, 600), "Test Title!");
+    Game* game = Game::get_instance();
 
-    game.run();
+    game->init(sf::VideoMode(200, 200), "Test title!");
+
+    game->run();
 
     return 0;
 }
