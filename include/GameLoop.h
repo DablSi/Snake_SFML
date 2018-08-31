@@ -1,5 +1,4 @@
-#ifndef GAMELOOP_H
-#define GAMELOOP_H
+#pragma once
 
 #include "EventSystem.h"
 
@@ -7,15 +6,13 @@
 #include <SFML/Graphics.hpp>
 #include "Game.h"
 
-class GameLoop1 {
+class GameLoop {
 public:
-    GameLoop1();
-    ~GameLoop1();
+    GameLoop();
+    ~GameLoop();
     
     void load_resources();
     void init();
     void update();
     void render(sf::RenderTarget* renderer);
 };
-
-#endif

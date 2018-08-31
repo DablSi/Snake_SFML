@@ -1,5 +1,4 @@
-#ifndef EVENT_SYSTEM_H
-#define EVENT_SYSTEM_H
+#pragma once
 
 #include <SFML/Window.hpp>
 
@@ -20,5 +19,3 @@ private:
     std::shared_ptr<sf::Event> m_event;
     static std::unique_ptr<EventSystem> m_eventsystem;
 };
-
-#endif

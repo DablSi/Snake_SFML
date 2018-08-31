@@ -37,7 +37,7 @@ void Game::init(const sf::VideoMode& mode, const std::string& title)
 
 void Game::run()
 {
-    m_gameloop = std::make_unique<GameLoop1>();
+    m_gameloop = std::make_unique<GameLoop>();
 
     m_gameloop->load_resources();
     m_gameloop->init();

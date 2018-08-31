@@ -1,26 +1,26 @@
 #include "GameLoop.h"
 
-GameLoop1::GameLoop1()
+GameLoop::GameLoop()
 {
 
 }
 
-GameLoop1::~GameLoop1()
+GameLoop::~GameLoop()
 {
 
 }
 
-void GameLoop1::load_resources()
+void GameLoop::load_resources()
 {
 
 }
 
-void GameLoop1::init()
+void GameLoop::init()
 {
 
 }
 
-void GameLoop1::update()
+void GameLoop::update()
 {
     EventSystem* system = EventSystem::get_instance();
 
@@ -29,7 +29,7 @@ void GameLoop1::update()
     }
 }
 
-void GameLoop1::render(sf::RenderTarget* renderer)
+void GameLoop::render(sf::RenderTarget* renderer)
 {
     renderer->clear(sf::Color(255,0,0));
 }

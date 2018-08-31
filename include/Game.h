@@ -1,5 +1,4 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once
 
 #include "EventSystem.h"
 
@@ -11,7 +10,7 @@
 
 #include "GameLoop.h"
 
-class GameLoop1;
+class GameLoop;
 
 class Game {
 public:
@@ -28,10 +27,8 @@ private:
     Game();
 
     std::unique_ptr<sf::RenderWindow> m_window;
-    std::unique_ptr<GameLoop1> m_gameloop;
+    std::unique_ptr<GameLoop> m_gameloop;
     EventSystem* m_eventsystem;
 
     static std::unique_ptr<Game> m_game;
 };
-
-#endif
