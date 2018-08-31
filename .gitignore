@@ -34,3 +34,7 @@ CMakeFiles
 
 # Some folders
 bin
+
+# Visual studio code
+settings.json
+.vscode
